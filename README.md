@@ -49,6 +49,17 @@ Sont écrits à l'aide de HTML qui inclut des attributs et des éléments spéci
   *  Promises : émettent une seule valeur à la fois, ils s'exécutent immédiatement après la création
   *  Observables : émettent une séquence de données, ne sont exécutées que lorsqu'elles sont souscrites à l'aide de la méthode de subscribe(). ils aident à effectuer les opérations comme filter , map, pipe…
 
+  Voici un tableau simple des différences :  
+
+| **Aspect**         | **Promise**                              | **Observable**                           |
+|---------------------|------------------------------------------|------------------------------------------|
+| **Nombre de valeurs** | Une seule valeur                      | Plusieurs valeurs                        |
+| **Lancement**        | Démarre immédiatement                 | Démarre avec `.subscribe()`             |
+| **Annulation**       | Impossible                             | Possible avec `unsubscribe()`            |
+| **Opérateurs**       | Non disponible                         | Disponible (`map`, `filter`, etc.)       |
+| **Usage courant**    | Tâches simples (requêtes HTTP uniques) | Flux complexes (événements, WebSocket)  |
+
+
 - 14 .	Bootstrap, comment on peut l’ajouter à Angular:
 Est un framework JavaScript, CSS et HTML on peut l’ajouter :
   *  Bootstrap CDN, 
