@@ -68,6 +68,20 @@ Est un framework JavaScript, CSS et HTML on peut l’ajouter :
 - 15 .	C’est quoi lifecycle hooks?
 Lors de la création d'une application angulaire, il y aura des moments où nous devrons exécuter du code lors d'un événement spécifique, par exemple lorsqu'un composant est initialisé ou lorsque le composant est supprimé de l'écran. ( ngOnChanges, ngOnInit, ngDoCheck, ........ngOnDestroy)
 
+Voici un tableau des cycles de vie d’un composant Angular avec une description concise pour chaque méthode :
+
+| **Méthode**          | **Description**                                                                 |
+|-----------------------|---------------------------------------------------------------------------------|
+| **ngOnChanges()**     | Déclenché lorsqu’une propriété liée à un parent change.                        |
+| **ngOnInit()**        | Appelé une fois après l’initialisation des données liées au composant.         |
+| **ngDoCheck()**       | Appelé à chaque détection de changement, pour une logique personnalisée.       |
+| **ngAfterContentInit()** | Appelé après l’insertion du contenu (projeté via `<ng-content>`).             |
+| **ngAfterContentChecked()** | Appelé après chaque vérification du contenu projeté.                      |
+| **ngAfterViewInit()** | Appelé après l’initialisation des vues enfants (composants enfants).           |
+| **ngAfterViewChecked()** | Appelé après chaque vérification des vues enfants.                           |
+| **ngOnDestroy()**     | Appelé juste avant la destruction du composant pour nettoyer les ressources.   |
+
+
 - 16 .	ngOnInit : est une méthode de lifecycle hook exécutée par Angular pour indiquer qu'un composant a été créé.
 
 - 17 .	Angular pipes : sont des classes avec décoration @Pipe, qui transforme l'entrée en sortie selon la logique donnée.
